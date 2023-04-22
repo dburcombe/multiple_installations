@@ -1,0 +1,12 @@
+---
+- name: Installations
+  hosts: all
+  become: true
+  tasks:
+
+- name: install nagios
+   apt:
+     name: nagios
+     state: latest
+          
+  
